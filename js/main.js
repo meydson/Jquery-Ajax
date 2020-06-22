@@ -1,4 +1,4 @@
-const { type, get } = require("jquery")
+//const { type, get } = require("jquery")
 
 function consultaCep() {
     let cep = document.getElementById("cep").value
@@ -8,8 +8,8 @@ function consultaCep() {
         type: "GET",
         success: function(response) {
             console.log(response)
-            document.getElementById("logradouro").innerHTML = response.logradouro
-            $("#bairro").html(response.bairro)
+            //document.getElementById("logradouro").innerHTML = response.logradouro
+            //$("#bairro").html(response.bairro)
         }
     })
 }
